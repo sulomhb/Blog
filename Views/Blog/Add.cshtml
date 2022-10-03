@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Add post";
+}
+
+<h1 class="display-4">Add post</h1>
+
+<form method="POST" action="/Blog/Insert">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="Title">Title</label>
+            <input type="text" class="form-control" id="Title" name="Title" placeholder="Title" required>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="Summary">Summary</label>
+            <input type="text" class="form-control" id="Summary" name="Summary" placeholder="Summary" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Content">Content</label>
+        <textarea class="form-control mb-2" id="Content" name="Content" placeholder="Content" rows="4" required></textarea>
+    </div>
+    <button type="submit" name ="Submit" id="Submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,10 @@
+@model BlogPost
+
+<tr>
+  <td class="Nickname">@Model.Nickname</td>
+  <td class="Title">@Model.Title</td>
+  <td class="Summary">@Model.Summary</td>
+  <td class="Content">@Model.Content</td>
+  <td class="Time">@Model.Now.ToString("dd.MM.yyyy")</td>
+  <td><a href="/Blog/Edit/@Model.ID">Edit</a></td>
+</tr>
